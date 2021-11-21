@@ -42,12 +42,6 @@ test('Add to Duo button adds robot to player', async () => {
 
     await duoBtn.click()
 
-    let duoBots = await driver.findElement(By.id('player-id'))
-
-    await driver.sleep(2000)
-
-    expect(duoBots).toEqual(2)
-
     await driver.sleep(5000)
 
 })
